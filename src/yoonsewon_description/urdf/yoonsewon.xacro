@@ -1,0 +1,330 @@
+<?xml version="1.0" ?>
+<robot name="yoonsewon" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find yoonsewon_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find yoonsewon_description)/urdf/yoonsewon.trans" />
+<xacro:include filename="$(find yoonsewon_description)/urdf/yoonsewon.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.2048172438463916 0.5237278515907052 0.08201638480100135" rpy="0 0 0"/>
+    <mass value="9.256673612924148"/>
+    <inertia ixx="0.418621" iyy="0.634233" izz="1.048893" ixy="-0.000337" iyz="0.000423" ixz="2.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_v1_1">
+  <inertial>
+    <origin xyz="-4.839509504181438e-07 3.918150555115574e-07 -0.021724105831364887" rpy="0 0 0"/>
+    <mass value="0.05852628730136243"/>
+    <inertia ixx="1.5e-05" iyy="1.5e-05" izz="1.3e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01668 -0.296981 -0.06493" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01668 -0.296981 -0.06493" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_v1__1__1">
+  <inertial>
+    <origin xyz="2.4292782574431016e-07 3.918150148773947e-07 -0.02172410583136445" rpy="0 0 0"/>
+    <mass value="0.05852628730136243"/>
+    <inertia ixx="1.5e-05" iyy="1.5e-05" izz="1.3e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.425468 -0.296981 -0.06493" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.425468 -0.296981 -0.06493" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_v1__2__1">
+  <inertial>
+    <origin xyz="2.4292744760234797e-07 2.601037856209132e-07 0.021724261441448622" rpy="0 0 0"/>
+    <mass value="0.05852628730136243"/>
+    <inertia ixx="1.5e-05" iyy="1.5e-05" izz="1.3e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.425468 -0.865228 -0.08933" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.425468 -0.865228 -0.08933" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_v1__3__1">
+  <inertial>
+    <origin xyz="-4.839514688298463e-07 2.601034713167749e-07 0.021724261441448248" rpy="0 0 0"/>
+    <mass value="0.05852628730136243"/>
+    <inertia ixx="1.5e-05" iyy="1.5e-05" izz="1.3e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01668 -0.865228 -0.08933" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01668 -0.865228 -0.08933" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor2_v1_1">
+  <inertial>
+    <origin xyz="-1.2051151535019677e-07 -0.01995018890125902 3.1915735547449753e-07" rpy="0 0 0"/>
+    <mass value="0.04532760237460443"/>
+    <inertia ixx="1e-05" iyy="8e-06" izz="1e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.204394 -0.196572 -0.076661" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.204394 -0.196572 -0.076661" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/motor2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="profeller_1350_v1_1">
+  <inertial>
+    <origin xyz="1.819620451447798 0.32072524408078307 -0.07514680253907399" rpy="0 0 0"/>
+    <mass value="0.01689409412325324"/>
+    <inertia ixx="1e-06" iyy="5.2e-05" izz="5.3e-05" ixy="-1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.834902 -0.544557 -0.215692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.834902 -0.544557 -0.215692" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="profeller_1350_v1__2__1">
+  <inertial>
+    <origin xyz="-1.0090401475123467 1.7427246844552697 -0.04163980253907425" rpy="0 0 0"/>
+    <mass value="0.01689409412325324"/>
+    <inertia ixx="1.8e-05" iyy="3.5e-05" izz="5.3e-05" ixy="2.4e-05" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.9912 1.444959 -0.058634" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.9912 1.444959 -0.058634" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="profeller_1350_v1__3__1">
+  <inertial>
+    <origin xyz="-0.25352015005843626 1.6035870253492162 -0.0421548025390739" rpy="0 0 0"/>
+    <mass value="0.01689409412325324"/>
+    <inertia ixx="3.1e-05" iyy="2.3e-05" izz="5.3e-05" ixy="2.5e-05" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.678062 1.305556 -0.058634" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.678062 1.305556 -0.058634" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="profeller_1480_v1_1">
+  <inertial>
+    <origin xyz="-0.9063261119491344 0.018091728521597378 -1.4489643108148564" rpy="0 0 0"/>
+    <mass value="0.020359256171264842"/>
+    <inertia ixx="1.6e-05" iyy="7.3e-05" izz="5.8e-05" ixy="-0.0" iyz="-0.0" ixz="-2.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.109376 -0.12983 -1.52492" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1480_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.109376 -0.12983 -1.52492" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1480_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="profeller_1350_v1__1__1">
+  <inertial>
+    <origin xyz="0.0011634836447337316 0.0007792373525745688 0.011897197460926406" rpy="0 0 0"/>
+    <mass value="0.01689409412325324"/>
+    <inertia ixx="1.6e-05" iyy="3.7e-05" izz="5.3e-05" ixy="-2.3e-05" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.425468 -0.865228 -0.129448" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.425468 -0.865228 -0.129448" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/profeller_1350_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="tail_v1_1">
+  <inertial>
+    <origin xyz="-0.42296819185358203 -0.613794025567939 -0.02257370288866689" rpy="0 0 0"/>
+    <mass value="0.4550748977110902"/>
+    <inertia ixx="0.002474" iyy="0.014714" izz="0.013426" ixy="-5e-06" iyz="0.000673" ixz="9.4e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.629862 -0.224219 -0.174019" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/tail_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.629862 -0.224219 -0.174019" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://yoonsewon_description/meshes/tail_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint2" type="continuous">
+  <origin xyz="-0.01668 0.296981 0.06493" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor_v1_1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="joint3" type="continuous">
+  <origin xyz="0.425468 0.296981 0.06493" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor_v1__1__1"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="joint4" type="continuous">
+  <origin xyz="0.425468 0.865228 0.08933" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor_v1__2__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="joint5" type="continuous">
+  <origin xyz="-0.01668 0.865228 0.08933" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor_v1__3__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="joint6" type="continuous">
+  <origin xyz="0.204394 0.196572 0.076661" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor2_v1_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="joint7" type="fixed">
+  <origin xyz="-1.818222 -0.320671 0.126362" rpy="0 0 0"/>
+  <parent link="motor_v1__3__1"/>
+  <child link="profeller_1350_v1_1"/>
+</joint>
+
+<joint name="joint9" type="fixed">
+  <origin xyz="1.00788 -1.74194 -0.006296" rpy="0 0 0"/>
+  <parent link="motor_v1_1"/>
+  <child link="profeller_1350_v1__2__1"/>
+</joint>
+
+<joint name="joint10" type="fixed">
+  <origin xyz="0.252594 -1.602537 -0.006296" rpy="0 0 0"/>
+  <parent link="motor_v1__1__1"/>
+  <child link="profeller_1350_v1__3__1"/>
+</joint>
+
+<joint name="joint11" type="fixed">
+  <origin xyz="0.904982 -0.066742 1.448259" rpy="0 0 0"/>
+  <parent link="motor2_v1_1"/>
+  <child link="profeller_1480_v1_1"/>
+</joint>
+
+<joint name="joint12" type="fixed">
+  <origin xyz="0.0 0.0 0.040118" rpy="0 0 0"/>
+  <parent link="motor_v1__2__1"/>
+  <child link="profeller_1350_v1__1__1"/>
+</joint>
+
+<joint name="joint13" type="fixed">
+  <origin xyz="0.629862 0.224219 0.174019" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="tail_v1_1"/>
+</joint>
+
+</robot>
